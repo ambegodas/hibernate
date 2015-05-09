@@ -31,7 +31,15 @@
 
 		<property name="hibernate.search.default.directory_provider">filesystem</property>
 		<property name="hibernate.search.default.indexBase">target/indexes</property>
-		<mapping class ="com.sample.hibernate.UserDetails"/>
-		
+		<mapping class ="com.sample.model.UserDetails"/>
+		<mapping class ="com.sample.model.Vehicle"/>
+		<mapping class ="com.sample.model.Employee"/>
+		<mapping class ="com.sample.model.LapTop"/>
+		<mapping class ="com.sample.model.GenericVehicle"/>
+		<mapping class ="com.sample.model.TwoWheeler"/>
+		<mapping class ="com.sample.model.FourWheeler"/>
+		<mapping class ="com.sample.model.Computer"/>
+		<mapping class ="com.sample.model.Desktop"/>
+		<mapping class ="com.sample.model.Tablet"/>
 	</session-factory>
 </hibernate-configuration>
