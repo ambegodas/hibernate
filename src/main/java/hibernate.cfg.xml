@@ -27,19 +27,20 @@
         <property name="show_sql">true</property>
 
         <!-- Drop and re-create the database schema on startup -->
-        <property name="hbm2ddl.auto">create</property>
+        <property name="hbm2ddl.auto">update</property>
 
 		<property name="hibernate.search.default.directory_provider">filesystem</property>
 		<property name="hibernate.search.default.indexBase">target/indexes</property>
-		<mapping class ="com.sample.model.UserDetails"/>
-		<mapping class ="com.sample.model.Vehicle"/>
-		<mapping class ="com.sample.model.Employee"/>
-		<mapping class ="com.sample.model.LapTop"/>
-		<mapping class ="com.sample.model.GenericVehicle"/>
-		<mapping class ="com.sample.model.TwoWheeler"/>
-		<mapping class ="com.sample.model.FourWheeler"/>
-		<mapping class ="com.sample.model.Computer"/>
-		<mapping class ="com.sample.model.Desktop"/>
-		<mapping class ="com.sample.model.Tablet"/>
+<!-- 		<mapping class ="com.sample.model.UserDetails"/> -->
+<!-- 		<mapping class ="com.sample.model.Vehicle"/> -->
+<!-- 		<mapping class ="com.sample.model.Employee"/> -->
+<!-- 		<mapping class ="com.sample.model.LapTop"/> -->
+<!-- 		<mapping class ="com.sample.model.GenericVehicle"/> -->
+<!-- 		<mapping class ="com.sample.model.TwoWheeler"/> -->
+<!-- 		<mapping class ="com.sample.model.FourWheeler"/> -->
+<!-- 		<mapping class ="com.sample.model.Computer"/> -->
+<!-- 		<mapping class ="com.sample.model.Desktop"/> -->
+<!-- 		<mapping class ="com.sample.model.Tablet"/> -->
+		<mapping class ="com.sample.model.Student"/>
 	</session-factory>
 </hibernate-configuration>
