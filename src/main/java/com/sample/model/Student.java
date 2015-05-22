@@ -4,13 +4,19 @@
  */
 package com.sample.model;
 
+import javax.persistence.Cacheable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.NamedNativeQuery;
 import javax.persistence.NamedQuery;
 
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
 @Entity
+@Cacheable
+@Cache(usage = CacheConcurrencyStrategy.READ_ONLY)
 @NamedQuery(name="student.byId",query="from Student where studentId = ?")
 @NamedNativeQuery(name="Student.byName",query="select * from Student where studentName = ?",resultClass = Student.class)
 @org.hibernate.annotations.Entity(selectBeforeUpdate=true)
